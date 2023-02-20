@@ -1,0 +1,375 @@
+
+
+*,
+*::before,
+*::after {
+    font-family: 'Hack', arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box ; 
+    font-family: 'Cairo', sans-serif !important;
+}
+
+
+
+/* Classess comps */
+.icon {
+    color: gray !important;
+    font-size: 23px !important;
+}
+
+.sec-pad {
+    padding: 100px 0 !important;
+}
+img {
+    display: block;
+    max-width: 100%  !important;  
+}
+.logo img {
+    border: 1px solid rgb(0 0 0 /2%);
+    display: block;
+    object-fit: cover;
+    width: 80px;
+    background: white;
+    border-radius: 10px;
+    z-index: 999;
+}
+
+.main-heading {
+    color: rgb(27, 27, 27);
+    font-weight: 400;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+    text-transform: capitalize;
+    font-size: 30px !important;
+    text-transform: uppercase !important;
+    max-width: 500px;
+    margin: 30px auto;
+    padding-bottom: 60px !important;
+    text-align: center !important;
+
+}
+
+@media (min-width: 768px) {
+    .logo img {
+        position: absolute;
+        top: 120%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 200px;
+        width: 200px;
+        box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.15);
+    }
+}
+
+
+/* Start Header */
+header {
+    min-height: 100px;
+    background: white ; 
+    border-bottom: 1px solid  ; 
+    width: 100%;
+    padding: 30px;
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+
+@media (max-width: 768px) {
+    header .container {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+    }
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 15px;
+}
+
+header nav a {
+    display: block;
+    padding: 5px;
+}
+/* End Header */
+
+/* Start Hero Section */
+
+.hero-section {
+    min-height: 60vh;
+    /* background: black; */
+    position: relative;
+    padding: 30px;
+    margin-bottom: 80px;
+    background-position: center ; 
+    background-repeat: no-repeat ; 
+    background-size: cover ; 
+    position: relative;
+    background-image: url('https://img.freepik.com/free-vector/stylish-glowing-digital-red-lines-banner_1017-23964.jpg?w=826&t=st=1676848619~exp=1676849219~hmac=b6fc12aefa9b90348407b4f8c3a8af3cc3ef69ece902734d80923c84b1f75a9b') ;
+}
+
+.hero-box {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    height: 300px;
+    background-color: rgb(136, 134, 128);
+    width: 300px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    position: absolute;
+    bottom: -20%;
+    right: 10%;
+    font-size: 30px !important;
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.3) !important;
+    color: rgb(255, 255, 255);
+    line-height: 1.2 !important;
+    text-align: center !important;
+    text-transform: capitalize !important;
+    font-weight: bold;
+    text-transform: uppercase !important;
+    padding: 30px !important;
+    word-break: break-all;
+    white-space: pre-line !important;
+    max-width: 100%;
+
+}
+
+@media (max-width: 768px) {
+    .hero-box {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+}
+
+/* End Hero Section */
+/* Start Products */
+.products .items {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+}
+
+.products .items .item-product {
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 500px;
+    background: black;
+    text-decoration: none ; 
+    border-radius: 5px;
+    text-transform: uppercase !important;
+    padding: 30px  !important;
+
+}
+
+@media (min-width: 768px) {
+    .products .items {
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+
+}
+/* End products */
+/* Start about */
+.about {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 800px) {
+    .about {
+        grid-template-columns: 1fr 1fr !important;
+    }
+}
+
+.about .about-txt {
+    padding: 30px 40px;
+    background: black;
+    color: white !important;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    background: #161616;
+    justify-content: center;
+
+}
+
+.about .about-txt h2 {
+
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.about .about-txt span {
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: rgb(247, 247, 247) !important;
+}
+
+.about .about-txt p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: rgb(164, 164, 164);
+    line-height: 1.4;
+}
+/* End About */
+/* Start contact */
+.contact {
+    min-height: 80vh ;
+    padding: 20px ; 
+    text-align: center ; 
+    flex-direction: column ; 
+    display: flex;
+    justify-content: center ; 
+    align-items: center;
+    gap: 30px ;
+    background-position: center ; 
+    background-size: cover ; 
+    background-repeat: no-repeat ; 
+    background-image: url('https://img1.wsimg.com/isteam/stock/2656/:/rs=w:1535,m') ; 
+}
+
+.contact-box {
+    width: 700px ; 
+    max-width: 100% ; 
+    padding: 30px ; 
+    background: white ; 
+    padding: 30px;
+    border-radius: 10px ; 
+    display: flex;
+    flex-direction: column ;
+    justify-content: center ; 
+    align-items: center;
+    gap: 20px;
+}
+.contact h2 {
+    font-size: 50px !important
+    ;
+    color: white  ;  
+    text-shadow: 1px black ;
+}
+
+
+
+.contact-box .info > *{
+    display: block;
+
+}
+.contact-box .info b {
+    font-size: 16px !important;
+    margin-bottom: 10px !important;
+    line-height: 1.3  !important;
+    color: rgb(27, 27, 27) !important;
+    font-weight:  400 ;
+    letter-spacing: 1px  !important; 
+    text-transform: capitalize  !important;  
+    font-weight: bold ; 
+}
+.contact-box .info span {
+    color: grey ;  
+}
+/* End Contact */
+
+/* Start Subscribe */
+.subscribe {
+    padding: 50px 30px ; 
+    background: rgb(136, 134, 128)  ; 
+    
+}
+.subscribe h3 {
+    font-weight: bold !important;
+    font-size: 40px !important; 
+    color: white !important;  
+    text-transform: uppercase !important;
+    margin: 0 !important;
+    padding: 0 !important; 
+}
+.subscribe .container {
+    display: flex;
+    align-items: center;
+    gap:30px;
+    justify-content: center ; 
+    flex-wrap: wrap ; 
+}
+
+.subscribe input {
+    flex: 1 ; 
+    display: block;
+    padding: 10px 20px ; 
+    background: rgb(123, 121, 116) ; 
+    border: none;
+    outline: none ; 
+    caret-color: white ; 
+}
+.subscribe input::placeholder {
+    color: white  !important;
+    font-weight: bold  ; 
+}
+.subscribe button {
+    padding: 10px 20px ; 
+    background: black ; 
+    border-radius: 10px ; 
+    border: none;
+    outline: none ; 
+    font-size: 17px ; 
+    font-weight: bold  !important; 
+    color: white !important; 
+}
+
+/* Start gallery */
+
+.gallery {
+    min-height: 70vh ;
+}
+
+/* Start footer */
+
+
+footer {
+    padding: 60px 20px ; 
+    background: rgb(22, 22, 22)  !important; 
+    color: white ; 
+}
+footer .box {
+    max-width: 500px; 
+    margin: auto ;
+    display: flex;
+    flex-direction: column  ; 
+    gap: 20px;
+    justify-content: center ; 
+    align-items: center;
+    text-align: center ; 
+}
+footer .box  .items{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap ; 
+}
+footer .box  .items a{
+text-decoration: none;  
+color: white ; 
+font-weight: normal  ; 
+font-size: 14px ; 
+text-transform: capitalize !important;
+display: block;
+padding: 10px !important;
+
+}
+footer .box  p{
+
+    margin-top: 13px !important;
+    color: whitesmoke  !important;
+    font-size: 13px !important;   
+
+}
